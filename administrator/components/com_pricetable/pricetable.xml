@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+    <name>com_pricetable</name>
+    <creationDate>2015-03-09</creationDate>
+    <copyright>Copyright (C) 2014. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <author>Abdur Rashid</author>
+    <authorEmail>rashid.cse.05@gmail.com</authorEmail>
+    <authorUrl>http://www.keenitsolution.com</authorUrl>
+    <version>2.0.0</version>
+    <description>Joomla Pricing Table component will help you to generate pricing table in the dynamic and easiest way.</description>
+    <install> <!-- Runs on install -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall> <!-- Runs on uninstall -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>pricetable.php</filename>
+        <filename>controller.php</filename>
+        <filename>router.php</filename>
+        <folder>views</folder>
+        <folder>models</folder>
+        <folder>controllers</folder>
+        <folder>helpers</folder>
+        <folder>assets</folder>
+    </files>
+    <languages folder="languages/site">
+        
+			<language tag="en-GB">en-GB/en-GB.com_pricetable.ini</language>
+    </languages>
+    <administration>
+        <menu img="components/com_pricetable/assets/images/s_com_pricetable.png" >COM_PRICETABLE</menu>
+        <submenu>
+            
+			<menu link="option=com_pricetable&amp;view=pricetables" view="pricetables" img="components/com_pricetable/assets/images/s_pricetables.png" alt="Pricetable/Pricetables">COM_PRICETABLE_TITLE_PRICETABLES</menu>
+
+			<menu link="option=com_categories&amp;extension=com_pricetable" view="categories" img="components/com_pricetable/assets/images/s_pricetables.png" alt="Pricetable/Categories">COM_PRICETABLE_PRICETABLES_PLAN_CAT</menu>
+
+        </submenu>
+        <files folder="administrator">
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>pricetable.php</filename>
+            <folder>controllers</folder>
+            <folder>assets</folder>
+            <folder>helpers</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+        </files>
+        <languages folder="languages/administrator">
+            
+			<language tag="en-GB">en-GB/en-GB.com_pricetable.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_pricetable.sys.ini</language>
+        </languages>
+    </administration>
+    <plugins>
+        <plugin group="search" plugin="pricetable"/>
+    </plugins>
+    
+</extension>
+

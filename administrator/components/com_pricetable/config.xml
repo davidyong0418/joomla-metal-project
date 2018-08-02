@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <fieldset label="COM_PRICETABLE" name="pricetable">
+        <field name="currency" type="text" default="$" label="COM_PRICETABLE_CURRENCY" description="" size="10" />
+		<field name="links_behaviour" type="radio" default="_self" label="COM_PRICETABLE_LINKS_BEHAVIOUR" description="">
+		  <option value="_self">Open in current window</option>
+		  <option value="_blank">Open in new window/tab</option>
+		</field>
+    </fieldset>
+
+    <fieldset 
+        name="permissions"
+	description="JCONFIG_PERMISSIONS_DESC"
+	label="JCONFIG_PERMISSIONS_LABEL">
+
+		<field 
+                    name="rules" type="rules" component="com_pricetable"
+                    class="inputbox" filter="rules" validate="rules"
+                    label="JCONFIG_PERMISSIONS_LABEL"
+                    section="component" />
+	</fieldset>
+</config>
+

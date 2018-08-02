@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_PRICETABLE_TITLE_LIST_VIEW_PRICETABLES" option="View">
+        <message>
+                        <![CDATA[COM_PRICETABLE_TITLE_LIST_VIEW_PRICETABLES_DESC]]>
+        </message>
+	</layout>
+	 <fields name="params">
+        <fieldset 
+            name="basic"
+            label="COM_PRICETABLE_FIELDSET_ITEM_ID_SELECT_LABEL">
+			<field
+				name="show_cat"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="COM_PRICETABLE_PRICETABLES_PLAN_CAT_TITLE_DISPLAY"
+					description="COM_PRICETABLE_PRICETABLES_PLAN_CAT_TITLE_DISPLAY_DESC">
+						<option value="1">Yes</option>
+						<option value="0">No</option>
+				</field>
+        </fieldset>
+    </fields>
+</metadata>

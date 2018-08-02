@@ -1,0 +1,5 @@
+
+[01-Jun-2018 14:57:08 UTC] PHP Warning:  get_headers(): https:// wrapper is disabled in the server configuration by allow_url_fopen=0 in /home/sitioswe/public_html/mediaarchitectsnh.com/administrator/components/com_joomlaupdate/models/default.php on line 255
+[01-Jun-2018 14:57:08 UTC] PHP Warning:  get_headers(): This function may only be used against URLs in /home/sitioswe/public_html/mediaarchitectsnh.com/administrator/components/com_joomlaupdate/models/default.php on line 255
+[01-Jun-2018 14:59:51 UTC] PHP Warning:  Creating default object from empty value in /home/sitioswe/public_html/mediaarchitectsnh.com/libraries/src/Updater/Update.php on line 297
+[01-Jun-2018 14:59:51 UTC] PHP Warning:  Creating default object from empty value in /home/sitioswe/public_html/mediaarchitectsnh.com/libraries/src/Updater/Update.php on line 297

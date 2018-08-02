@@ -1,0 +1,1 @@
+ALTER TABLE `#__pricetable_pricetable` ADD `plan_cat` VARCHAR(255) NOT NULL AFTER `plan_title`;

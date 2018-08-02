@@ -1,0 +1,10 @@
+.icon-48-pricetables {
+      background-image: url(../images/l_pricetables.png);
+      padding-left:60px!important;
+}
+
+.icon-48-pricetable {
+      background-image: url(../images/l_pricetables.png);
+      padding-left:60px!important;
+}
+.in_box, .remove_fa{ margin-left:5px; margin-top:10px; margin-bottom:5px !important;}

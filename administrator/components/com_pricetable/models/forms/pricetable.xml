@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+<fieldset>
+
+<field name="id" type="text" default="0" label="COM_PRICETABLE_FORM_LBL_PRICETABLE_ID"
+readonly="true" class="readonly"
+description="JGLOBAL_FIELD_ID_DESC" /> 
+
+<field name="plan_title" type="text" size="40" class="inputbox"
+label="COM_PRICETABLE_FORM_LBL_PRICETABLE_PLAN_TITLE"
+description="COM_PRICETABLE_FORM_DESC_PRICETABLE_PLAN_TITLE" 
+required="true" 
+filter="safehtml" /> 
+
+<field name="plan_cat" type="category"
+label="COM_PRICETABLE_FORM_LBL_PRICETABLE_PLAN_CAT"
+description="COM_PRICETABLE_FORM_DESC_PRICETABLE_PLAN_CAT" 
+required="true" 
+extension="com_pricetable" /> 
+
+
+<field name="filter_plan_cat" type="category"
+label="COM_PRICETABLE_FORM_LBL_PRICETABLE_PLAN_CAT"
+description="COM_PRICETABLE_FORM_DESC_PRICETABLE_PLAN_CAT"  extension="com_pricetable" show_root="1" onchange="this.form.submit();" /> 
+
+<field name="header_top_color" type="color" default="#0A82B9"
+label="COM_PRICETABLE_FORM_LBL_PRICETABLE_HEADER_TOP_COLOR"
+description="COM_PRICETABLE_FORM_DESC_PRICETABLE_HEADER_TOP_COLOR" />
+
+<field name="header_bottom_color" type="color" default="#409D50"
+label="COM_PRICETABLE_FORM_LBL_PRICETABLE_HEADER_BOTTOM_COLOR"
+description="COM_PRICETABLE_FORM_DESC_PRICETABLE_HEADER_BOTTOM_COLOR" />
+
+<field name="price" type="text" size="40" class="inputbox"
+label="COM_PRICETABLE_FORM_LBL_PRICETABLE_PRICE"
+description="COM_PRICETABLE_FORM_DESC_PRICETABLE_PRICE" 
+required="true" 
+filter="safehtml" /> 
+
+<field name="plan_subtext" type="text" size="40" class="inputbox"
+label="COM_PRICETABLE_FORM_LBL_PRICETABLE_PLAN_SUBTEXT"
+description="COM_PRICETABLE_FORM_DESC_PRICETABLE_PLAN_SUBTEXT" 
+filter="safehtml" /> 
+
+<field name="details" type="text" size="40" class="inputbox"
+label="COM_PRICETABLE_FORM_LBL_PRICETABLE_DETAILS"
+description="COM_PRICETABLE_FORM_DESC_PRICETABLE_DETAILS" 
+filter="safehtml" /> 
+
+ 
+<field name="button_text" type="text" size="40" class="inputbox" default="Contact"
+label="COM_PRICETABLE_FORM_LBL_PRICETABLE_BUTTON_TEXT"
+description="COM_PRICETABLE_FORM_DESC_PRICETABLE_BUTTON_TEXT" 
+filter="safehtml" />
+ 
+<field name="button_url" type="text" default="http://keenitsolution.com/contact-us" size="40" class="inputbox"
+label="COM_PRICETABLE_FORM_LBL_PRICETABLE_BUTTON_URL"
+description="COM_PRICETABLE_FORM_DESC_PRICETABLE_BUTTON_URL" 
+filter="safehtml" />
+ 
+<field name="button_color" type="color" default="#409D50"
+label="COM_PRICETABLE_FORM_LBL_PRICETABLE_BUTTON_COLOR"
+description="COM_PRICETABLE_FORM_DESC_PRICETABLE_BUTTON_COLOR" />
+
+
+<field name="created_by" type="createdby" default="" 
+label="COM_PRICETABLE_FORM_LBL_PRICETABLE_CREATED_BY"
+description="COM_PRICETABLE_FORM_DESC_PRICETABLE_CREATED_BY"  /> 
+
+<field
+name="state"
+type="list"
+label="JSTATUS"
+description="JFIELD_PUBLISHED_DESC"
+class="inputbox"
+size="1"
+default="1">
+<option value="1">JPUBLISHED</option>
+<option value="0">JUNPUBLISHED</option>
+<option value="2">JARCHIVED</option>
+<option value="-2">JTRASHED</option>
+</field> 
+
+<field name="checked_out" type="hidden" filter="unset" />
+<field name="checked_out_time" type="hidden" filter="unset" />
+
+</fieldset>
+
+</form>

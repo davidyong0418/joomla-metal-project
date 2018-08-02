@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="filter">
+        <field name="search" type="text" hint="COM_PRICETABLE_SEARCH_FILTER_SUBMIT"
+               label="COM_USERS_FILTER_SEARCH_DESC"
+               class="js-stools-search-string" />
+
+        
+		<field name="plan_cat" type="category"
+            label="COM_PRICETABLE_FORM_LBL_PRICETABLE_CREATED_BY"
+            description="COM_PRICETABLE_FORM_DESC_PRICETABLE_CREATED_BY"  extension="com_pricetable" show_root="1" onchange="this.form.submit();" />
+
+    </fields>
+</form>
